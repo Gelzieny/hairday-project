@@ -1,5 +1,26 @@
 {
-	"dependencies": {
-		"json-server": "1.0.0-alpha.21"
-	}
+  "name": "hair-day",
+  "version": "1.0.0",
+  "description": "Aplicação web para agendamento de cortes de cabelo",
+  "scripts": {
+    "serve": "json-server --watch server.json --port 3001",
+    "build": "webpack",
+    "dev": "webpack serve"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.19",
+    "json-server": "1.0.0-alpha.21"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.1",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.5",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  }
 }
